@@ -14,6 +14,9 @@ class todoValidator extends validator {
         .optional()
         .isBoolean()
         .withMessage("وضعیت باید یک یا صفر باشد."),
+        check("date")
+        .isDate()
+        .withMessage("تاریخ درست نیست."),
     ];
   }
 }
